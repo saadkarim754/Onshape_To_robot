@@ -1,0 +1,13 @@
+{
+    "configuration": "default",
+    "documentId": "c2f8c0f4cc2871b1960725e5",
+    "documentMicroversion": "2bcf1154f9ad3c03a2122daa",
+    "elementId": "95f048a9b18b4a432f24b1eb",
+    "fullConfiguration": "default",
+    "id": "M+f7a991adsL6m9dj",
+    "isStandardContent": false,
+    "name": "Motor6 <1>",
+    "partId": "JSD",
+    "suppressed": false,
+    "type": "Part"
+}
