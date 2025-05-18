@@ -1,21 +1,267 @@
-<?xml version="1.0"?>
-<robot name="my_robot">
-  <link name="base_link">
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/c2f8c0f4cc2871b1960725e5/w/daf1e303c611c75dfc5a7e94/e/175181dcbd73fc9a880780bf -->
+<robot name="my-robot">
+  <!-- Link base_robot -->
+  <link name="base_robot">
+    <inertial>
+      <origin xyz="-0.000741065 0.0074192 -0.00905506" rpy="0 0 0"/>
+      <mass value="3.56934"/>
+      <inertia ixx="0.0127417" ixy="0" ixz="0" iyy="0.0127417" iyz="0" izz="0.0244557"/>
+    </inertial>
+    <!-- Part base_robot -->
     <visual>
+      <origin xyz="-0.000741065 0.0074192 -0.0182294" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="assets/part_1.stl"/>
+        <mesh filename="assets/base_robot.stl"/>
       </geometry>
+      <material name="base_robot_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
     </visual>
     <collision>
+      <origin xyz="-0.000741065 0.0074192 -0.0182294" rpy="0 -0 0"/>
       <geometry>
-        <mesh filename="assets/part_1.stl"/>
+        <mesh filename="assets/base_robot.stl"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="1.0"/>
-      <origin xyz="0 0 0"/>
-      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
-    </inertial>
   </link>
-  <!-- Add joints and more links as needed -->
-</robot>
+  <!-- Link base_cover -->
+  <link name="base_cover">
+    <inertial>
+      <origin xyz="0.0120511 0.00896043 -0.0143363" rpy="0 0 0"/>
+      <mass value="2.30738"/>
+      <inertia ixx="0.0036743" ixy="-0.000551452" ixz="0.000574585" iyy="0.00409266" iyz="0.000427225" izz="0.00657873"/>
+    </inertial>
+    <!-- Part base_cover -->
+    <visual>
+      <origin xyz="0 -5.42101e-18 -0.01" rpy="3.69779e-32 -0 2.3085e-18"/>
+      <geometry>
+        <mesh filename="assets/base_cover.stl"/>
+      </geometry>
+      <material name="base_cover_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -5.42101e-18 -0.01" rpy="3.69779e-32 -0 2.3085e-18"/>
+      <geometry>
+        <mesh filename="assets/base_cover.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link handle_for_link2 -->
+  <link name="handle_for_link2">
+    <inertial>
+      <origin xyz="-3.57169e-17 0.153214 -0.0208066" rpy="0 0 0"/>
+      <mass value="5.4475"/>
+      <inertia ixx="0.0529194" ixy="2.7897e-18" ixz="-7.8691e-20" iyy="0.0020197" iyz="0.000424683" izz="0.0530903"/>
+    </inertial>
+    <!-- Part handle_for_link2 -->
+    <visual>
+      <origin xyz="0.0149148 0.0994132 -0.04" rpy="-1.5708 3.19862e-19 7.25413e-17"/>
+      <geometry>
+        <mesh filename="assets/handle_for_link2.stl"/>
+      </geometry>
+      <material name="handle_for_link2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0149148 0.0994132 -0.04" rpy="-1.5708 3.19862e-19 7.25413e-17"/>
+      <geometry>
+        <mesh filename="assets/handle_for_link2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_3 -->
+    <visual>
+      <origin xyz="0.124237 0.283802 -0.035" rpy="-1.5708 5.77413e-16 -3.43565e-16"/>
+      <geometry>
+        <mesh filename="assets/motor_3.stl"/>
+      </geometry>
+      <material name="motor_3_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.124237 0.283802 -0.035" rpy="-1.5708 5.77413e-16 -3.43565e-16"/>
+      <geometry>
+        <mesh filename="assets/motor_3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link link3_handle -->
+  <link name="link3_handle">
+    <inertial>
+      <origin xyz="-2.60209e-17 -0.0922205 -0.0199974" rpy="0 0 0"/>
+      <mass value="3.40398"/>
+      <inertia ixx="0.0136191" ixy="9.4382e-19" ixz="9.42848e-20" iyy="0.00116761" iyz="-6.00051e-08" izz="0.0138776"/>
+    </inertial>
+    <!-- Part link3_handle -->
+    <visual>
+      <origin xyz="0.0149148 -0.0994132 -6.93889e-18" rpy="1.5708 -3.99368e-18 7.43444e-17"/>
+      <geometry>
+        <mesh filename="assets/link3_handle.stl"/>
+      </geometry>
+      <material name="link3_handle_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0149148 -0.0994132 -6.93889e-18" rpy="1.5708 -3.99368e-18 7.43444e-17"/>
+      <geometry>
+        <mesh filename="assets/link3_handle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link link4_handle -->
+  <link name="link4_handle">
+    <inertial>
+      <origin xyz="-9.25527e-06 0.000220537 -0.0730111" rpy="0 0 0"/>
+      <mass value="0.367832"/>
+      <inertia ixx="0.000448695" ixy="-7.50792e-10" ixz="1.94349e-07" iyy="0.000447201" iyz="3.35923e-06" izz="2.40917e-05"/>
+    </inertial>
+    <!-- Part link4_handle -->
+    <visual>
+      <origin xyz="0 2.08167e-17 0" rpy="-3.14159 5.39502e-17 -4.54392e-17"/>
+      <geometry>
+        <mesh filename="assets/link4_handle.stl"/>
+      </geometry>
+      <material name="link4_handle_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 2.08167e-17 0" rpy="-3.14159 5.39502e-17 -4.54392e-17"/>
+      <geometry>
+        <mesh filename="assets/link4_handle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor5 -->
+    <visual>
+      <origin xyz="0.0559638 2.08167e-17 -0.0606015" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/motor5.stl"/>
+      </geometry>
+      <material name="motor5_material">
+        <color rgba="0.917647 0.917647 0.917647 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0559638 2.08167e-17 -0.0606015" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/motor5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link link5_handle -->
+  <link name="link5_handle">
+    <inertial>
+      <origin xyz="2.88788e-17 -0.0428678 -0.00734075" rpy="0 0 0"/>
+      <mass value="0.180767"/>
+      <inertia ixx="0.000153789" ixy="6.49068e-21" ixz="7.10342e-21" iyy="7.19325e-06" iyz="1.74011e-06" izz="0.000153384"/>
+    </inertial>
+    <!-- Part link5_handle -->
+    <visual>
+      <origin xyz="2.77556e-17 0.0085452 -0.0075" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/link5_handle.stl"/>
+      </geometry>
+      <material name="link5_handle_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 0.0085452 -0.0075" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/link5_handle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor6 -->
+    <visual>
+      <origin xyz="0.0411607 -0.124429 0.002" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/motor6.stl"/>
+      </geometry>
+      <material name="motor6_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0411607 -0.124429 0.002" rpy="3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/motor6.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link weld_bit -->
+  <link name="weld_bit">
+    <inertial>
+      <origin xyz="1.82155e-08 -0.0194197 -5.79969e-05" rpy="0 0 0"/>
+      <mass value="0.0318015"/>
+      <inertia ixx="7.17176e-06" ixy="-4.85954e-13" ixz="-4.56956e-12" iyy="3.94327e-07" iyz="3.5879e-08" izz="7.17666e-06"/>
+    </inertial>
+    <!-- Part weld_bit -->
+    <visual>
+      <origin xyz="0 0.00686626 0" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/weld_bit.stl"/>
+      </geometry>
+      <material name="weld_bit_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.00686626 0" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="assets/weld_bit.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from link5_handle to weld_bit -->
+  <joint name="6" type="revolute">
+    <origin xyz="2.77556e-17 -0.0814548 0.012" rpy="3.14159 2.24312e-15 -1.66689"/>
+    <parent link="link5_handle"/>
+    <child link="weld_bit"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from link4_handle to link5_handle -->
+  <joint name="5" type="revolute">
+    <origin xyz="5.55112e-17 0.0175 -0.114421" rpy="1.5708 0.349259 -2.43091e-15"/>
+    <parent link="link4_handle"/>
+    <child link="link5_handle"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from link3_handle to link4_handle -->
+  <joint name="4" type="revolute">
+    <origin xyz="-5.55112e-17 -0.195 -0.02" rpy="1.5708 -0.0948862 -3.14159"/>
+    <parent link="link3_handle"/>
+    <child link="link4_handle"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from handle_for_link2 to link3_handle -->
+  <joint name="3" type="revolute">
+    <origin xyz="-1.38778e-17 0.28 -0.06" rpy="-3.15633e-15 1.88816e-15 1.6715"/>
+    <parent link="handle_for_link2"/>
+    <child link="link3_handle"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base_cover to handle_for_link2 -->
+  <joint name="2" type="revolute">
+    <origin xyz="0.00741211 0.0287922 -0.035" rpy="-1.5708 0.98264 -1.5708"/>
+    <parent link="base_cover"/>
+    <child link="handle_for_link2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base_robot to base_cover -->
+  <joint name="1" type="revolute">
+    <origin xyz="-0.000741065 0.0074192 0.0417706" rpy="-3.14159 5.69324e-16 -1.68671"/>
+    <parent link="base_robot"/>
+    <child link="base_cover"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower=

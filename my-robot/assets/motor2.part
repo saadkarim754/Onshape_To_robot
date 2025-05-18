@@ -1,12 +1,12 @@
 {
     "configuration": "default",
     "documentId": "c2f8c0f4cc2871b1960725e5",
-    "documentMicroversion": "2bcf1154f9ad3c03a2122daa",
+    "documentMicroversion": "b458757ee20fa48f49324a6c",
     "elementId": "339a68622df6ab58c9886665",
     "fullConfiguration": "default",
-    "id": "McT6vfVLiO7r8shTv",
+    "id": "MRm/x3mU9UvUKO9nI",
     "isStandardContent": false,
-    "name": "motor2 <4>",
+    "name": "motor2 <1>",
     "partId": "JKD",
     "suppressed": false,
     "type": "Part"
