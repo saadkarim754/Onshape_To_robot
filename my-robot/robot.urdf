@@ -256,7 +256,7 @@
     <parent link="base_cover"/>
     <child link="handle_for_link2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <limit effort="10" velocity="10" lower="-2.38" upper="0.43"/>
   </joint>
   <!-- Joint from base_robot to base_cover -->
   <joint name="1" type="revolute">
@@ -264,4 +264,4 @@
     <parent link="base_robot"/>
     <child link="base_cover"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower=
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
