@@ -1,29 +1,21 @@
-<?xml version="1.0" ?>
-<!-- Generated using onshape-to-robot -->
-<!-- Onshape https://cad.onshape.com/documents/1243925a359320158b3fbba9/w/71b2d59c3d327c7e15180794/e/cce7af892d307f9422d7360f -->
-<robot name="D:\python_projects\onshape_urdf\my-robot">
-  <!-- Link part_1 -->
-  <link name="part_1">
-    <inertial>
-      <origin xyz="-0.0157242 -0.00857078 0.000761375" rpy="0 0 0"/>
-      <mass value="0.51392"/>
-      <inertia ixx="0.000137045" ixy="0" ixz="0" iyy="0.000137045" iyz="0" izz="0.000137045"/>
-    </inertial>
-    <!-- Part part_1 -->
+<?xml version="1.0"?>
+<robot name="my_robot">
+  <link name="base_link">
     <visual>
-      <origin xyz="-0.0157242 0.0114292 0.000761375" rpy="0 -0 0"/>
       <geometry>
         <mesh filename="assets/part_1.stl"/>
       </geometry>
-      <material name="part_1_material">
-        <color rgba="0.615686 0.811765 0.929412 1.0"/>
-      </material>
     </visual>
     <collision>
-      <origin xyz="-0.0157242 0.0114292 0.000761375" rpy="0 -0 0"/>
       <geometry>
         <mesh filename="assets/part_1.stl"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="1.0"/>
+      <origin xyz="0 0 0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
   </link>
+  <!-- Add joints and more links as needed -->
 </robot>
